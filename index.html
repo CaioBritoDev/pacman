@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac Man by Caio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<script src="pacman.js" defer></script> 
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+        margin: 0;
+        padding: 10px 20px;
+        background-color: black;
+    }
+
+    #score {
+
+        color: white;
+        font-family: 'Press Start 2P';
+        font-size: 14;
+        margin-bottom: 6px;
+
+    }
+
+    footer > p {
+
+        text-align: center;
+        font-family: 'Press Start 2P';
+        color: white;
+
+    }
+
+
+    #playAgain {
+
+        width: 200px;
+        height: 120px;
+        position: absolute;
+        margin-top: 15.5%;
+        margin-left: 9%;
+
+    }
+
+    #lose {
+
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 9%;
+
+    }
+
+    #win {
+        
+        width: 200px;
+        height: 75px;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 9%;
+
+    }
+
+</style>
+<body>
+    <p id="score">
+        <span>Score:</span><span id="scoreNumber">0</span>
+        <span id="result"></span>
+    </p>
+
+        <img style='cursor: pointer; ' hidden = true id='playAgain' onclick='reset()' src="img/playagain.png">
+        <img hidden = true  id='lose' src="img/lose.png">
+        <img hidden = true  id='win' src="img/win.png">
+
+    <canvas id="canvas">
+        <p>Seu navegador não possui suporte ao canvas</p>
+    </canvas>
+
+</body>
+
+<footer>
+    <p>&copy; Caio Augusto o Melhor do Mundo</p>
+</footer>
+
+</html>
+
